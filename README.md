@@ -4,7 +4,7 @@
 Crear una calculadora funcional mediante el uso de HTML, CSS y JS de nivel básico. 
 - Organizado mediante el uso de *Trello*.
 - Realizado en el editor de texto *Sublime Text*.
-## Reparto de tareas
+### Reparto de tareas
 - HTML y JS
 > [Yasser](https://github.com/Yasser0618)
 - CSS
@@ -12,12 +12,12 @@ Crear una calculadora funcional mediante el uso de HTML, CSS y JS de nivel bási
 - Documentación
 > [Asier](https://github.com/asiergutierrez)
 
-# Documentación de la Calculadora
+## Documentación de la Calculadora
 
-## Descripción General
+### Descripción General
 Este documento describe el funcionamiento del archivo `script.js` que implementa la lógica de una calculadora básica con operaciones aritméticas fundamentales.
 
-## Variables Globales
+### Variables Globales
 ```javascript
 let display = document.querySelector('.resultado');
 let currentInput = '';
@@ -29,9 +29,9 @@ let previousInput = '';
 - `currentOperation`: Guarda el operador seleccionado
 - `previousInput`: Almacena el valor anterior para operaciones secuenciales
 
-## Funciones Principales
+### Funciones Principales
 
-### 1. updateDisplay(value)
+#### 1. updateDisplay(value)
 ```javascript
 function updateDisplay(value) {
     display.value = value;
@@ -39,7 +39,7 @@ function updateDisplay(value) {
 ```
 Actualiza el valor mostrado en la pantalla de la calculadora.
 
-### 2. handleNumber(number)
+#### 2. handleNumber(number)
 ```javascript
 function handleNumber(number) {
     currentInput += number;
@@ -48,7 +48,7 @@ function handleNumber(number) {
 ```
 Maneja la entrada de números, concatenándolos a la entrada actual.
 
-### 3. handleOperator(operator)
+#### 3. handleOperator(operator)
 ```javascript
 function handleOperator(operator) {
     if (currentInput === '') return;
@@ -64,7 +64,7 @@ function handleOperator(operator) {
 ```
 Gestiona los operadores aritméticos y prepara la calculadora para la siguiente operación.
 
-### 4. calculate()
+#### 4. calculate()
 ```javascript
 function calculate() {
     // Implementa las operaciones aritméticas básicas
@@ -73,7 +73,7 @@ function calculate() {
 ```
 Realiza los cálculos matemáticos según el operador seleccionado.
 
-### 5. clear()
+#### 5. clear()
 ```javascript
 function clear() {
     currentInput = '';
@@ -84,7 +84,7 @@ function clear() {
 ```
 Limpia todos los valores y reinicia la calculadora.
 
-### 6. backspace()
+#### 6. backspace()
 ```javascript
 function backspace() {
     currentInput = currentInput.slice(0, -1);
@@ -93,7 +93,7 @@ function backspace() {
 ```
 Elimina el último carácter ingresado.
 
-### 7. handleParentheses()
+#### 7. handleParentheses()
 ```javascript
 function handleParentheses() {
     if (currentInput.includes('(')) {
@@ -106,9 +106,9 @@ function handleParentheses() {
 ```
 Maneja la inserción de paréntesis de forma alternada.
 
-## Event Listeners
+### Event Listeners
 
-### Botones Numéricos
+#### Botones Numéricos
 ```javascript
 document.querySelectorAll('.numeros button').forEach(button => {
     button.addEventListener('click', () => {
@@ -117,7 +117,7 @@ document.querySelectorAll('.numeros button').forEach(button => {
 });
 ```
 
-### Botones de Operadores
+#### Botones de Operadores
 ```javascript
 document.querySelectorAll('.operadores button').forEach(button => {
     button.addEventListener('click', () => {
@@ -126,7 +126,7 @@ document.querySelectorAll('.operadores button').forEach(button => {
 });
 ```
 
-## Operaciones Soportadas
+### Operaciones Soportadas
 - Suma (+)
 - Resta (-)
 - Multiplicación (*)
@@ -136,12 +136,12 @@ document.querySelectorAll('.operadores button').forEach(button => {
 - Borrado (C)
 - Reinicio (AC)
 
-## Características de Seguridad
+### Características de Seguridad
 - Prevención de división por cero
 - Validación de entradas
 - Manejo de operaciones secuenciales
 
-## Uso
+### Uso
 1. Ingrese números usando los botones numéricos
 2. Seleccione una operación
 3. Ingrese el segundo número
@@ -149,7 +149,7 @@ document.querySelectorAll('.operadores button').forEach(button => {
 5. Use 'C' para borrar el último carácter
 6. Use 'AC' para reiniciar la calculadora
 
-## Notas Técnicas
+### Notas Técnicas
 - La calculadora maneja números decimales
 - Las operaciones se realizan en tiempo real
 - El display se actualiza automáticamente con cada entrada
