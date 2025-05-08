@@ -155,7 +155,7 @@ document.querySelectorAll('.operadores button').forEach(button => {
 - El display se actualiza automáticamente con cada entrada
 - Se mantiene el estado de la operación actual
 
-##Subida de la calculadora a vagrant
+## Subida de la calculadora a vagrant
 1. Iniciacion y apertura de vagrant.
 2. Nos localizamos en la ruta necesaria para subir nuestra calculadora.
    
