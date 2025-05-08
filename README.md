@@ -159,12 +159,12 @@ document.querySelectorAll('.operadores button').forEach(button => {
 1. Iniciacion y apertura de vagrant.
 2. Nos localizamos en la ruta necesaria para subir nuestra calculadora.
    
-   ![Imagen en la que se muestra los comandos necesarios para localizarse en la ruta](./assets/images/vagrant1)
+   ![Imagen en la que se muestra los comandos necesarios para localizarse en la ruta](./assets/images/vagrant1.png)
    
 4. Creacion de carpeta y entrada en la misma.
    
-   ![Imagen en la que se muestra los comandos necesarios para la creación de la carpeta](./assets/images/vagrant2)
+   ![Imagen en la que se muestra los comandos necesarios para la creación de la carpeta](./assets/images/vagrant2.png)
    
 6. Clonación del repositorio de github en la carpeta
    
-   ![Imagen en la que se muestra los comandos necesarios para clonar el repositorio](./assets/images/vagrant3)
+   ![Imagen en la que se muestra los comandos necesarios para clonar el repositorio](./assets/images/vagrant3.png)
