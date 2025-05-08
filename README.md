@@ -154,3 +154,17 @@ document.querySelectorAll('.operadores button').forEach(button => {
 - Las operaciones se realizan en tiempo real
 - El display se actualiza automáticamente con cada entrada
 - Se mantiene el estado de la operación actual
+
+##Subida de la calculadora a vagrant
+1. Iniciacion y apertura de vagrant.
+2. Nos localizamos en la ruta necesaria para subir nuestra calculadora.
+   
+   ![Imagen en la que se muestra los comandos necesarios para localizarse en la ruta](./assets/images/vagrant1.png)
+   
+4. Creacion de carpeta y entrada en la misma.
+   
+   ![Imagen en la que se muestra los comandos necesarios para la creación de la carpeta](./assets/images/vagrant2.png)
+   
+6. Clonación del repositorio de github en la carpeta
+   
+   ![Imagen en la que se muestra los comandos necesarios para clonar el repositorio](./assets/images/vagrant3.png)
