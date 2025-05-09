@@ -61,7 +61,7 @@ button { /*Estilo de los botones de numeros*/
     color: white;
 }
 button:hover { /*Estilo de los botones de numeros con hover*/
-    background-color: #blueviolet;
+    background-color: blueviolet;
     transform: scale(1.05);
 }
 .operadores button { /*Estilo de los botones de operadores*/
@@ -71,16 +71,16 @@ button:hover { /*Estilo de los botones de numeros con hover*/
     background-color: #FF8000;
 }
 .operadores button[aria-label="boton resultado"] { /*Estilo del boton de resultados (=)*/
-    background-color: #darkgoldenrod;
+    background-color: darkgoldenrod;
 }
 button[aria-label="boton resultado"]:hover { /*Estilo del boton de resultados (=) con hover*/
-    background-color: #greenyellow;
+    background-color: greenyellow;
 }
 button[aria-label="boton resetear la calculadora"],
 button[aria-label="boton eliminar 1 caracter"] { /*Estilo de los botones para borrar un caracter (C) y resetear la calculadora (AC)*/
-    background-color: #darkred;
+    background-color: darkred;
 }
 button[aria-label="boton resetear la calculadora"]:hover,
 button[aria-label="boton eliminar 1 caracter"]:hover { /*Estilo de los botones para borrar un caracter (C) y resetear la calculadora (AC) con hover*/
-    background-color: #orange;
+    background-color: orange;
 }
